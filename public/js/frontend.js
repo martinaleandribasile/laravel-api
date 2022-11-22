@@ -2075,7 +2075,9 @@ var render = function render() {
     return _c("div", {
       key: category.id
     }, [category.id == _vm.post.category_id ? _c("h3", [_vm._v(_vm._s(category.name))]) : _vm._e()]);
-  })], 2)]);
+  }), _vm._v(" "), _vm.post.category_id == null ? _c("h4", {
+    staticClass: "text-black-50"
+  }, [_vm._v("Non ci sono categorie associate")]) : _vm._e()], 2)]);
 };
 var staticRenderFns = [];
 render._withStripped = true;

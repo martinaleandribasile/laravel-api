@@ -14,7 +14,7 @@
             <div v-for="category in categories" :key="category.id">
                 <h3 v-if="category.id == post.category_id">{{category.name}}</h3>
             </div>
-            <h4 class="text-black-50" v-if="post.category_id == undefined">Non ci sono categorie associate</h4>
+            <h4 class="text-black-50" v-if="post.category_id == null">Non ci sono categorie associate</h4>
        </div>
   </div>
 </template>
